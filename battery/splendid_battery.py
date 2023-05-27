@@ -9,7 +9,7 @@ class SplendidBattery(Battery):
     def needs_service(self):
         print("in splendid")
         print(self.last_service_date)
-        service_threshold_date = self.last_service_date.replace(year=self.last_service_date.year + 2)
+        service_threshold_date = self.last_service_date.replace(year=self.last_service_date.year + 3)
         print(service_threshold_date, self.current_date)
         if service_threshold_date < self.current_date:
             return True
